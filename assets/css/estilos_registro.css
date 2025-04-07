@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    flex-direction: column;
+    color: #ffffff;
+  }
+  .login-container {
+    background: rgb(255, 171, 74);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+    color: #000;
+  }
+  .login-container h2 {
+    margin-bottom: 20px;
+    color: #000;
+  }
+  .input-group {
+    margin-bottom: 15px;
+  }
+  .input-group input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .login-btn {
+    background: #d35400;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .login-btn:hover {
+    background: #b03a00;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+  .login-image {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  .register-link {
+    margin-top: 15px;
+  }
+  .register-link a {
+    color: #d35400;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: rgb(0, 0, 0);
+      color: white;
+    }
+  }  
