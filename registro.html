@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión - Pizzería</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Registro - Pizzería</title>
+    <link rel="stylesheet" href="/assets/css/estilos_registro.css">
     <link rel="stylesheet" href="/assets/css/fondo.css">
 </head>
 <body>
@@ -18,21 +18,26 @@
       </div>
     <div class="login-container">
         <img src="/assets/img/LOGO.png" alt="Logo Pizzería" class="logo">
-        <h2>Inicio de Sesión</h2>
+        <h2>Registro</h2>
         <form>
+            <div class="input-group">
+                <input type="text" placeholder="Nombre Completo" required>
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="Correo Electrónico" required>
+            </div>
             <div class="input-group">
                 <input type="text" placeholder="Usuario" required>
             </div>
             <div class="input-group">
                 <input type="password" placeholder="Contraseña" required>
             </div>
-            <button type="submit" class="login-btn">Iniciar Sesión</button>
+            <button type="submit" class="login-btn">Registrarse</button>
         </form>
         <img src="assets/img/image-removebg-preview.png" alt="Imagen Pizzería" class="login-image">
         <div class="register-link">
-            ¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a>
+            ¿Ya tienes una cuenta? <a href="index.html">Inicia sesión aquí</a>
         </div>
     </div>
-  
 </body>
 </html>
