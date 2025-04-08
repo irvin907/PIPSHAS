@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ubicación - Pizzas</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f3f3f3;
+    }
+
+    /* Header */
+    header {
+      background-color: #ffa733;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    nav {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    /* Search Bar */
+    .search-bar {
+      background-color: white;
+      margin: 20px auto;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      width: 90%;
+      max-width: 700px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-bar input {
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+
+    .search-bar i {
+      color: gray;
+    }
+
+    /* Map image */
+    .map {
+      width: 90%;
+      max-width: 700px;
+      margin: 10px auto;
+    }
+
+    .map img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Location Info */
+    .location-box {
+      width: 90%;
+      max-width: 700px;
+      margin: 20px auto;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .location-box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .location-info {
+      padding: 15px;
+    }
+
+    .location-info h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .location-info p {
+      color: gray;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .location-info .select-btn {
+      background-color: black;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="menu-icon">☰</div>
+    <nav>
+      <a href="#">MENU</a>
+      <a href="#">UBICACION</a>
+      <a href="#">CARRITO</a>
+      <a href="#">CONTACTO</a>
+    </nav>
+  </header>
+
+  <div class="search-bar">
+    <i>🔍</i>
+    <input type="text" placeholder="Coatepec TESI — Sep 12 - 15 · 1 room · 2 guests">
+    <i>✏️</i>
+  </div>
+
+  <div class="map">
+    <img src="c:\Users\Edgar\OneDrive\Pictures\Screenshots\Captura de pantalla 2025-04-07 214643.png" alt="Mapa con precios">
+  </div>
+
+  <div class="location-box">
+    <img src="c:\Users\Edgar\OneDrive\Pictures\Screenshots\Captura de pantalla 2025-04-07 214818.png" alt="Sucursal Ixtapaluca">
+    <div class="location-info">
+      <h3>PIPSHAS IXTAPALUCA</h3>
+      <p>⭐ 4.8 (500 reviews) • 📍 1.2 miles</p>
+      <button class="select-btn">Select</button>
+    </div>
+  </div>
+
+</body>
+</html>
