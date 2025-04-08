@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú de Pizzas</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+    }
+    header {
+      background-color: #ffa73d;
+      padding: 15px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    header nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+    .search-box {
+      padding: 20px;
+      text-align: center;
+    }
+    .search-box input {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    .banner {
+      display: flex;
+      margin: 0 auto;
+      width: 90%;
+      max-width: 800px;
+      background-color: #e0e0e0;
+      border: 2px solid #2196f3;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .banner-text {
+      flex: 1;
+      padding: 20px;
+      font-weight: bold;
+    }
+    .banner img {
+      width: 50%;
+      object-fit: cover;
+    }
+    .section-title {
+      margin-left: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .sabores, .complementos {
+      display: flex;
+      justify-content: start;
+      gap: 30px;
+      overflow-x: auto;
+      padding: 10px 30px;
+    }
+    .item {
+      text-align: center;
+    }
+    .item img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .complemento img {
+      width: 100px;
+      height: 80px;
+      border-radius: 10px;
+    }
+    .complemento {
+      text-align: center;
+      max-width: 120px;
+    }
+    .brand {
+      font-size: 0.8em;
+      color: gray;
+    }
+    .price {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>☰</div>
+    <nav>
+      <a href="#">MENU</a>
+      <a href="#">UBICACION</a>
+      <a href="#">CARRITO</a>
+      <a href="#">CONTACTO</a>
+    </nav>
+  </header>
+
+  <div class="search-box">
+    <input type="text" placeholder="🔍 buscar">
+  </div>
+
+  <div class="banner">
+    <div class="banner-text">Pipshas</div>
+    <img src="c:\Users\Edgar\Downloads\Pizza-HD-Wallpapers-15281.jpg" alt="Pizza banner">
+  </div>
+
+  <div class="section-title">sabores ➤</div>
+  <div class="sabores">
+    <div class="item">
+      <img src="c:\Users\Edgar\Downloads\pngtree-beef-delight-pizza-png-image_3958016.png" alt="Carnes frías">
+      <div>Carnes<br>frías</div>
+    </div>
+    <div class="item">
+      <img src="c:\Users\Edgar\Downloads\png-transparent-sicilian-pizza-pulled-pork-barbecue-italian-cuisine-pizza-ingredient-barbecue-food-recipe.png" alt="Barbacoa">
+      <div>Barbacoa</div>
+    </div>
+    <div class="item">
+      <img src="c:\Users\Edgar\Downloads\noFilter.png" alt="Peperoni">
+      <div>Peperoni</div>
+    </div>
+    <div class="item">
+      <img src="c:\Users\Edgar\Downloads\hawaiian-pizza-with-pineapple-and-ham-isolated-on-transparent-background-free-png.webp" alt="Hawaina">
+      <div>Hawaina</div>
+    </div>
+  </div>
+
+  <div class="section-title">complementos ➤</div>
+  <div class="complementos">
+    <div class="complemento">
+      <img src="c:\Users\Edgar\Downloads\papas-al-parmesano.jpg" alt="Papa de gajo">
+      <div class="brand">Brand</div>
+      <div>Papa de gajo</div>
+      <div class="price">$70</div>
+    </div>
+    <div class="complemento">
+      <img src="c:\Users\Edgar\Downloads\taza-de-salsa-de-la-inmersión-del-ajo-del-queso-verde-con-el-palillo-del-apio-y-de-zanahoria-96044823.webp" alt="Deep de cebolla">
+      <div class="brand">Brand</div>
+      <div>Deep de cebolla</div>
+      <div class="price">$40</div>
+    </div>
+    <div class="complemento">
+      <img src="c:\Users\Edgar\Downloads\Preparación-de-salsa-ranchera.jpg" alt="Ranch">
+      <div class="brand">Brand</div>
+      <div>Ranch</div>
+      <div class="price">$40.99</div>
+    </div>
+  </div>
+
+</body>
+</html>
