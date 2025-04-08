@@ -100,8 +100,8 @@
   <header>
     <div>☰</div>
     <nav>
-      <a href="#">MENU</a>
-      <a href="#">UBICACION</a>
+      <a href="menu">MENU</a>
+      <a href="UBICACION.html">UBICACION</a>
       <a href="#">CARRITO</a>
       <a href="#">CONTACTO</a>
     </nav>
