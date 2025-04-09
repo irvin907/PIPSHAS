@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú de Pizzas</title>
+  <link rel="stylesheet" href="/assets/css/menu.css">
+</head>
+<body>
+
+  <header>
+    <button class="openbtn" onclick="openNav()">☰ Menú</button>
+    <nav>
+      <ul>
+        <li><a href="#">MENÚ</a>
+          <ul>
+            <li><a href="Menu.html">Pizzas</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="postres.html">Postres</a></li>
+          </ul>
+        </li>
+        <li><a href="UBICACION.html">UBICACION</a></li>
+        <li><a href="Carrito.html">CARRITO</a></li>
+        <li><a href="Contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Menú Lateral -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">Cuenta</a>
+    <a href="Menu.html">Menu</a>
+    <a href="Menu.html">Pizzas</a>
+    <a href="bebidas.html">Bebidas</a>
+    <a href="postres.html">Postres</a>
+    <a href="Carrito.html">Carrito</a>
+    <a href="Contacto.html">Contacto</a>
+  </div>
+
+
+  <div class="banner">
+    <div class="banner-text">Pipshas</div>
+    <img src="assets/img/banner.jpg" alt="Pizza banner">
+  </div>
+  <div class="section-title">sabores ➤</div>
+  <div class="sabores">
+    <div class="item">
+      <img src="assets/img/frias.png" alt="Carnes frías">
+      <div>Carnes<br>frías</div>
+    </div>
+    <div class="item">
+      <img src="assets/img/barbacoa.png" alt="Barbacoa">
+      <div>Barbacoa</div>
+    </div>
+    <div class="item">
+      <img src="assets/img/peperoni.png" alt="Peperoni">
+      <div>Peperoni</div>
+    </div>
+    <div class="item">
+      <img src="assets/img/hawaiana.png" alt="Hawaina">
+      <div>Hawaina</div>
+    </div>
+  </div>
+
+  <div class="section-title">complementos ➤</div>
+  <div class="complementos">
+    <div class="complemento">
+      <img src="assets/img/papas-al-parmesano.jpg" alt="Papa de gajo">
+      <div class="brand">Brand</div>
+      <div>Papa de gajo</div>
+      <div class="price">$70</div>
+    </div>
+    <div class="complemento">
+      <img src="assets/img/taza-de-salsa-de-la-inmersión-del-ajo-del-queso-verde-con-el-palillo-del-apio-y-de-zanahoria-96044823.webp" alt="Deep de cebolla">
+      <div class="brand">Brand</div>
+      <div>Deep de cebolla</div>
+      <div class="price">$40</div>
+    </div>
+    <div class="complemento">
+      <img src="assets/img/Preparación-de-salsa-ranchera.jpg" alt="Ranch">
+      <div class="brand">Brand</div>
+      <div>Ranch</div>
+      <div class="price">$40.99</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="nav.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+    align-items: center;
+  }
+  header {
+    background-color: #ffa73d;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  header nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+
+  /* Estilos para el menú desplegable */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav li {
+    position: relative;
+  }
+  nav li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: block;
+  }
+  nav li:hover {
+    background-color: #e6891c;
+  }
+  nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f8f8f8;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 180px;
+  }
+  nav li:hover > ul {
+    display: block;
+  }
+  nav li ul li a {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: black;
+  }
+  nav li ul li a:hover {
+    background-color: #ddd;
+  }
+
+  /* Menú lateral */
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ffa73d;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+  }
+
+  .search-box {
+    padding: 20px;
+    text-align: center;
+  }
+  .search-box input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  .banner {
+    display: flex;
+    width: 90%;
+    max-width: 800px;
+    background-color: #e0e0e0;
+    border: 2px solid #2196f3;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 100px;
+  }
+  .banner-text {
+    flex: 1;
+    padding: 20px;
+    font-weight: bold;
+  }
+  .banner img {
+    width: 50%;
+    object-fit: cover;
+  }
+  .section-title {
+    margin-left: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .sabores, .complementos {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 10px 30px;
+  }
+  .item {
+    text-align: center;
+  }
+  .item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  .complemento img {
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+  }
+  .complemento {
+    text-align: center;
+    max-width: 120px;
+  }
+  .brand {
+    font-size: 0.8em;
+    color: gray;
+  }
+  .price {
+    font-weight: bold;
+  }
+
+  /* Alineación del botón del menú lateral a la izquierda */
+  header .openbtn {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
+
+   /* Search Bar */
+   .search-bar {
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .search-bar i {
+    color: gray;
+  }
+
+  /* Map image */
+  .map {
+    width: 90%;
+    max-width: 700px;
+    margin: 10px auto;
+  }
+
+  .map img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* Location Info */
+  .location-box {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .location-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .location-info {
+    padding: 15px;
+  }
+
+  .location-info h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .location-info p {
+    color: gray;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .location-info .select-btn {
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  @media screen and (max-width: 600px) {
+    .login-container {
+      padding: 15px;
+    }
+  
+    .input-group input,
+    .login-btn {
+      width: 100%;
+    }
+  
+    .logo {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .login-image {
+      width: 80px;
+      height: 80px;
+    }
+  }

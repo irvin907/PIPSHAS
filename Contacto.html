@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú de Pizzas</title>
+  <link rel="stylesheet" href="/assets/css/contacto.css">
+</head>
+<body>
+
+  <header>
+    <button class="openbtn" onclick="openNav()">☰ Menú</button>
+    <nav>
+      <ul>
+        <li><a href="#">MENÚ</a>
+          <ul>
+            <li><a href="Menu.html">Pizzas</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="postres.html">Postres</a></li>
+          </ul>
+        </li>
+        <li><a href="UBICACION.html">UBICACION</a></li>
+        <li><a href="Carrito.html">CARRITO</a></li>
+        <li><a href="Contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Menú Lateral -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">Cuenta</a>
+    <a href="Menu.html">Menu</a>
+    <a href="Menu.html">Pizzas</a>
+    <a href="bebidas.html">Bebidas</a>
+    <a href="postres.html">Postres</a>
+    <a href="Carrito.html">Carrito</a>
+    <a href="Contacto.html">Contacto</a>
+  </div>
+
+
+ <center><div class="contact-container">
+    <h1>Contáctanos</h1>
+    <p>¿Tienes dudas o sugerencias? Envíanos un mensaje.</p>
+
+    <form action="#" method="POST" class="contact-form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar mensaje</button>
+      <p>O contactanos por: .</p>
+      <p>WhatsApp: 558967981376 .</p>
+      <p>Correo: Pipshas@gmail.com .</p>
+    </form>
+  </div></center>
+
+
+  <script src="nav.js"></script>
+
+</body>
+</html>

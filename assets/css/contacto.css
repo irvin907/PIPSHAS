@@ -1,0 +1,186 @@
+.contact-container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .contact-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .contact-container p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  
+  .contact-form button {
+    padding: 12px;
+    background-color: #ffa73d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #e6891c;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f8f8;
+    align-items: center;
+    justify-content: center;
+  }
+  header {
+    background-color: #ffa73d;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  header nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+
+  /* Estilos para el menú desplegable */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav li {
+    position: relative;
+  }
+  nav li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: block;
+  }
+  nav li:hover {
+    background-color: #e6891c;
+  }
+  nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f8f8f8;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 180px;
+  }
+  nav li:hover > ul {
+    display: block;
+  }
+  nav li ul li a {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: black;
+  }
+  nav li ul li a:hover {
+    background-color: #ddd;
+  }
+
+  /* Menú lateral */
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ffa73d;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+  }
+  @media screen and (max-width: 600px) {
+    .login-container {
+      padding: 15px;
+    }
+  
+    .input-group input,
+    .login-btn {
+      width: 100%;
+    }
+  
+    .logo {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .login-image {
+      width: 80px;
+      height: 80px;
+    }
+  }

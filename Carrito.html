@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú de Pizzas</title>
+  <link rel="stylesheet" href="/assets/css/carrito.css">
+</head>
+<body>
+
+  <header>
+    <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    <nav>
+      <ul>
+        <li><a href="#">MENÚ</a>
+          <ul>
+            <li><a href="Menu.html">Pizzas</a></li>
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="postres.html">Postres</a></li>
+          </ul>
+        </li>
+        <li><a href="UBICACION.html">UBICACION</a></li>
+        <li><a href="Carrito.html">CARRITO</a></li>
+        <li><a href="Contacto.html">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Menú Lateral -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="cuenta.html">Cuenta</a>
+    <a href="Menu.html">Pizzas</a>
+    <a href="bebidas.html">Bebidas</a>
+    <a href="postres.html">Postres</a>
+    <a href="Carrito.html">Carrito</a>
+    <a href="Contacto.html">Contacto</a>
+  </div>
+
+  <div class="container">
+  <div class="section">
+    <h2 class="section-title">COMPRA</h2>
+    <p>Añadir al carrito</p>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">DELIVERY</h2>
+    <p>Free<br>Standard | 3-4 días</p>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">PAGO</h2>
+    <p>Visa *1234</p>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">PROMOS</h2>
+    <p>Agregar código de promo</p>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">ITEMS</h2>
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>ITEMS</th>
+          <th>DESCRIPTION</th>
+          <th>PRICE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="https://razaitaliana.com/wp-content/uploads/2020/03/papas-al-parmesano.jpg" alt="Papas de gajo"></td>
+          <td>
+            <p>Brand</p>
+            <p>Papas de gajo</p>
+            <p>100grms</p>
+            <p>Cantidad: 01</p>
+          </td>
+          <td>$40</td>
+        </tr>
+        <tr>
+          <td><img src="assets/img/hawaiana.png" alt="Pizza Hawaiana"></td>
+          <td>
+            <p>Brand</p>
+            <p>Pizza Hawaiana</p>
+            <p>Grande</p>
+            <p>Cantidad: 01</p>
+          </td>
+          <td>$55</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="summary">
+    <div class="summary-row">
+      <span>Subtotal (2)</span>
+      <span>$95</span>
+    </div>
+    <div class="summary-row">
+      <span>Total</span>
+      <span>Free</span>
+    </div>
+    <div class="summary-row">
+      <span>Total</span>
+      <span>$95</span>
+    </div>
+    <a href="#" class="button">Ordenar</a>
+  </div>
+</div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+
+</body>
+</html>
