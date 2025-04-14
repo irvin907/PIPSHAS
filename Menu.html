@@ -2,90 +2,309 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Menú de Pizzas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PIPSHAS</title>
   <link rel="stylesheet" href="/assets/css/menu.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-  <header>
-    <button class="openbtn" onclick="openNav()">☰ Menú</button>
-    <nav>
-      <ul>
-        <li><a href="#">MENÚ</a>
-          <ul>
-            <li><a href="Menu.html">Pizzas</a></li>
-            <li><a href="bebidas.html">Bebidas</a></li>
-            <li><a href="postres.html">Postres</a></li>
-          </ul>
-        </li>
-        <li><a href="UBICACION.html">UBICACION</a></li>
-        <li><a href="Carrito.html">CARRITO</a></li>
-        <li><a href="Contacto.html">CONTACTO</a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- Menú lateral -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Menu.html">Menú</a>
+  <a href="bebidas.html">Bebidas</a>
+  <a href="postres.html">Postres</a>
+  <a href="Carrito.html">Carrito</a>
+  <a href="Contacto.html">Contacto</a>
+</div>
 
-  <!-- Menú Lateral -->
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="#">Cuenta</a>
-    <a href="Menu.html">Menu</a>
-    <a href="Menu.html">Pizzas</a>
-    <a href="bebidas.html">Bebidas</a>
-    <a href="postres.html">Postres</a>
-    <a href="Carrito.html">Carrito</a>
-    <a href="Contacto.html">Contacto</a>
+<!-- Header -->
+<header>
+  <span class="menu-icon" onclick="openNav()">☰</span>
+  <div class="logo">🍕 Pipshas</div>
+  <nav>
+    <ul>
+      <li><a href="Menu.html">Menú</a></li>
+      <li><a href="bebidas.html">Bebidas</a></li>
+      <li><a href="postres.html">Postres</a></li>
+      <li><a href="Carrito.html">Carrito</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="section-title">
+  <center><h2>Sabores Especiales</h2></center>
+</div>
+
+<div class="slider">
+  <div class="item">
+    <center><h1>PIZZA ROMANA</h1></center>
+    <img src="assets/img/Romana.webp" alt="Romana" class="img-sabor">
+    <button class="btn-detalles" onclick="mostrarDetalles('Pizza Romana')">Detalles</button>
   </div>
 
+<div class="item">
+  <center><h1>PIZZA ALICULI</h1></center>
+  <img src="assets/img/Aliculi.webp" alt="Aliculi" class="img-sabor">
+  <button class="btn-detalles" onclick="mostrarDetalles('Pizza Aliculi', 'Una pizza con ingredientes frescos del mar y albahaca italiana.')">Detalles</button>
+</div>
 
-  <div class="banner">
-    <div class="banner-text">Pipshas</div>
-    <img src="assets/img/banner.jpg" alt="Pizza banner">
+<div class="item">
+  <center><h1>PIZZA LIPARI</h1></center>
+  <img src="assets/img/Lipari.webp" alt="Lipari" class="img-sabor">
+  <button class="btn-detalles" onclick="mostrarDetalles('Pizza Lipari', 'Rica en quesos y vegetales mediterráneos, perfecta para los amantes del sabor tradicional.')">Detalles</button>
+</div>
+
+<div class="item">
+  <center><h1>PIZZA PASTORA</h1></center>
+  <img src="assets/img/Pastora.webp" alt="Pastora" class="img-sabor">
+  <button class="btn-detalles" onclick="mostrarDetalles('Pizza Pastora', 'Inspirada en los sabores mexicanos, con carne al pastor, piña y cebolla.')">Detalles</button>
+</div>
+
+<div class="item">
+  <center><h1>PIZZA SALINA</h1></center>
+  <img src="assets/img/Salina.webp" alt="Salina" class="img-sabor">
+  <button class="btn-detalles" onclick="mostrarDetalles('Pizza Salina', 'Una combinación de mariscos, aceitunas y un toque de limón.')">Detalles</button>
+</div>
+
+  <button id="next">&gt;</button>
+  <button id="prev">&lt;</button>
+</div>
+
+
+<div class="section-title">
+  <center><h2>Más Sabores</h2></center>
+</div>
+
+<div class="Sabores">
+  <div class="card">
+    <div class="first-content">
+      <span>Vegetariana</span>
+      <img src="assets/img/Vegetariana.png" alt="Vegetariana" class="img-sabor">
+    </div>
+    <div class="second-content">
+      <p id="ingredientes">INGREDIENTES</p>
+      <p id="ingredientes">champiñones, verduras frescas como: cebolla, pimentón verde, tomate y aceitunas negras, queso que estira, masa fresca</p>
+      <p id="Precio">$</p>
+      <button class="btn-add-cart" onclick="agregarAlCarrito(this)">
+        <span class="btn-text">Agregar al carrito</span>
+        <span class="btn-loader"></span>
+      </button>
+    </div>
+    
+    <!-- Mensaje centrado -->
+    <div id="mensaje-central" class="mensaje-central">
+      <span class="icono-check">✔</span> ¡Producto agregado!
+    </div>
   </div>
-  <div class="section-title">sabores ➤</div>
-  <div class="sabores">
-    <div class="item">
-      <img src="assets/img/frias.png" alt="Carnes frías">
-      <div>Carnes<br>frías</div>
+  <div class="card">
+    <div class="first-content">
+      <center><span>Peperoni</span></center>
+      <img src="assets/img/peperoni.png" alt="Peperoni" class="img-sabor">
     </div>
-    <div class="item">
-      <img src="assets/img/barbacoa.png" alt="Barbacoa">
-      <div>Barbacoa</div>
+    <div class="second-content">
+      <p id="ingredientes">INGREDIENTES</p>
+      <p id="ingredientes">Salsa de tomate,Queso mozzarella,Salame, el 'pepperoni' italiano,Pimienta negra,orégano y albahaca. Un poco de aceite de oliva virgen extra.</p>
+      <p id="Precio">$</p>      
+      <button class="btn-add-cart" onclick="agregarAlCarrito(this)">
+        <span class="btn-text">Agregar al carrito</span>
+        <span class="btn-loader"></span>
+      </button>
     </div>
-    <div class="item">
-      <img src="assets/img/peperoni.png" alt="Peperoni">
-      <div>Peperoni</div>
-    </div>
-    <div class="item">
-      <img src="assets/img/hawaiana.png" alt="Hawaina">
-      <div>Hawaina</div>
+    
+    <!-- Mensaje centrado -->
+    <div id="mensaje-central" class="mensaje-central">
+      <span class="icono-check">✔</span> ¡Producto agregado!
     </div>
   </div>
 
-  <div class="section-title">complementos ➤</div>
-  <div class="complementos">
-    <div class="complemento">
-      <img src="assets/img/papas-al-parmesano.jpg" alt="Papa de gajo">
-      <div class="brand">Brand</div>
-      <div>Papa de gajo</div>
-      <div class="price">$70</div>
+  <div class="card">
+    <div class="first-content">
+      <span>Cuatro Quesos</span>
+      <img src="assets/img/Cuatro_quesos.png" alt="Pastora" class="img-sabor">
     </div>
-    <div class="complemento">
-      <img src="assets/img/taza-de-salsa-de-la-inmersión-del-ajo-del-queso-verde-con-el-palillo-del-apio-y-de-zanahoria-96044823.webp" alt="Deep de cebolla">
-      <div class="brand">Brand</div>
-      <div>Deep de cebolla</div>
-      <div class="price">$40</div>
+    <div class="second-content">
+      <p id="ingredientes">INGREDIENTES</p>
+      <p id="ingredientes">Queso mozzarella, queso crema, queso cheddar, queso parmesano.</p>
+      <p id="Precio">$</p>      
+      <button class="btn-add-cart" onclick="agregarAlCarrito(this)">
+        <span class="btn-text">Agregar al carrito</span>
+        <span class="btn-loader"></span>
+      </button>
     </div>
-    <div class="complemento">
-      <img src="assets/img/Preparación-de-salsa-ranchera.jpg" alt="Ranch">
-      <div class="brand">Brand</div>
-      <div>Ranch</div>
-      <div class="price">$40.99</div>
+    
+    <!-- Mensaje centrado -->
+    <div id="mensaje-central" class="mensaje-central">
+      <span class="icono-check">✔</span> ¡Producto agregado!
     </div>
   </div>
 
-  <script src="app.js"></script>
-  <script src="nav.js"></script>
+  <div class="card">
+    <div class="first-content">
+      <span>Al Pastor</span>
+      <img src="assets/img/al_pastor.png" alt="Pastora" class="img-sabor">
+    </div>
+    <div class="second-content">
+      <p id="ingredientes">INGREDIENTES</p>
+      <p id="ingredientes">Carne al pastor, piña, cebolla y rajas</p>
+      <p id="Precio">$</p>      
+      <button class="btn-add-cart" onclick="agregarAlCarrito(this)">
+        <span class="btn-text">Agregar al carrito</span>
+        <span class="btn-loader"></span>
+      </button>
+    </div>
+    
+    <!-- Mensaje centrado -->
+    <div id="mensaje-central" class="mensaje-central">
+      <span class="icono-check">✔</span> ¡Producto agregado!
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="first-content">
+      <span>Mexicana</span>
+      <img src="assets/img/Mexicana.png" alt="Pastora" class="img-sabor">
+    </div>
+    <div class="second-content">
+      <p id="ingredientes">INGREDIENTES</p>
+      <p id="ingredientes">Pierna, Pollo, Jalapeño y aguacate</p>
+      <p id="Precio">$</p>      
+      <button class="btn-add-cart" onclick="agregarAlCarrito(this)">
+        <span class="btn-text">Agregar al carrito</span>
+        <span class="btn-loader"></span>
+      </button>
+    </div>
+    
+    <!-- Mensaje centrado -->
+    <div id="mensaje-central" class="mensaje-central">
+      <span class="icono-check">✔</span> ¡Producto agregado!
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="first-content">
+      <span>Hawaiana</span>
+      <img src="assets/img/hawaiana.png" alt="Pastora" class="img-sabor">
+    </div>
+    <div class="second-content">
+      <p id="ingredientes">INGREDIENTES</p>
+      <p id="ingredientes">Piña, jamon y tocino</p>
+      <p id="Precio">$</p>      
+      <button class="btn-add-cart" onclick="agregarAlCarrito(this)">
+        <span class="btn-text">Agregar al carrito</span>
+        <span class="btn-loader"></span>
+      </button>
+    </div>
+    
+    <!-- Mensaje centrado -->
+    <div id="mensaje-central" class="mensaje-central">
+      <span class="icono-check">✔</span> ¡Producto agregado!
+    </div>
+  </div>
+</div>
+
+
+<!-- Agrega esto después de la sección de "Más Sabores" -->
+
+<div class="section-title">
+  <center><h2>Complementos</h2></center>
+</div>
+
+<div class="Sabores">
+  <div class="card">
+    <div class="first-content">
+      <center><span>Aderezo Ranch</span></center>
+      <img src="assets/img/aderezo_ranch.png" alt="Aderezo Ranch" class="img-sabor">
+    </div>
+    <div class="second-content">
+      <p id="ingredientes">Descripción</p>
+      <p id="ingredientes">Aderezo cremoso con hierbas, ideal para acompañar cualquier pizza.</p>
+      <p id="Precio">$15</p>
+      <button class="btn-add-cart" onclick="agregarAlCarrito(this)">
+        <span class="btn-text">Agregar al carrito</span>
+        <span class="btn-loader"></span>
+      </button>
+    </div>
+    <div id="mensaje-central" class="mensaje-central">
+      <span class="icono-check">✔</span> ¡Producto agregado!
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="first-content">
+      <span>Pan de Ajo</span>
+      <img src="assets/img/pan_ajo.png" alt="Pan de Ajo" class="img-sabor">
+    </div>
+    <div class="second-content">
+      <p id="ingredientes">Descripción</p>
+      <p id="ingredientes">Pan crujiente con mantequilla de ajo y perejil.</p>
+      <p id="Precio">$30</p>
+      <button class="btn-add-cart" onclick="agregarAlCarrito(this)">
+        <span class="btn-text">Agregar al carrito</span>
+        <span class="btn-loader"></span>
+      </button>
+    </div>
+    <div id="mensaje-central" class="mensaje-central">
+      <span class="icono-check">✔</span> ¡Producto agregado!
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="first-content">
+      <span>Alitas BBQ</span>
+      <img src="assets/img/alitas_bbq.png" alt="Alitas BBQ" class="img-sabor">
+    </div>
+    <div class="second-content">
+      <p id="ingredientes">Descripción</p>
+      <p id="ingredientes">Jugosas alitas bañadas en salsa BBQ.</p>
+      <p id="Precio">$60</p>
+      <button class="btn-add-cart" onclick="agregarAlCarrito(this)">
+        <span class="btn-text">Agregar al carrito</span>
+        <span class="btn-loader"></span>
+      </button>
+    </div>
+    <div id="mensaje-central" class="mensaje-central">
+      <span class="icono-check">✔</span> ¡Producto agregado!
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="first-content">
+      <span>Papas Gajo</span>
+      <img src="assets/img/papas_gajo.png" alt="Papas Gajo" class="img-sabor">
+    </div>
+    <div class="second-content">
+      <p id="ingredientes">Descripción</p>
+      <p id="ingredientes">Papas sazonadas estilo gajo, perfectas para compartir.</p>
+      <p id="Precio">$40</p>
+      <button class="btn-add-cart" onclick="agregarAlCarrito(this)">
+        <span class="btn-text">Agregar al carrito</span>
+        <span class="btn-loader"></span>
+      </button>
+    </div>
+    <div id="mensaje-central" class="mensaje-central">
+      <span class="icono-check">✔</span> ¡Producto agregado!
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal reutilizable -->
+<div id="modal" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <h2 id="modal-titulo">Título</h2>
+    <p id="modal-descripcion">Descripción</p>
+    <button class="cerrar" onclick="cerrarModal()">Cerrar</button>
+  </div>
+</div>
+
+
+<script src="nav.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>
